@@ -1,0 +1,568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E96EE338C9159D3C433A107 /* Pods_EFAB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039C7CCA775895FE2D42570D /* Pods_EFAB.framework */; };
+		E42D2FD81DC7BB4D006294D3 /* NetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42D2FD71DC7BB4D006294D3 /* NetworkModel.swift */; };
+		E42D2FDA1DC7BEBE006294D3 /* WebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42D2FD91DC7BEBE006294D3 /* WebServices.swift */; };
+		E42D2FDD1DC7C895006294D3 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42D2FDC1DC7C895006294D3 /* Test.swift */; };
+		E42D2FE01DC7CB91006294D3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42D2FDF1DC7CB91006294D3 /* Constants.swift */; };
+		E45F0DD51DCB7085008E7DC8 /* AddCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F0DD41DCB7085008E7DC8 /* AddCategoryViewController.swift */; };
+		E45F0DD71DCB7367008E7DC8 /* BudgetListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F0DD61DCB7367008E7DC8 /* BudgetListViewController.swift */; };
+		E45F0DD91DCB73BD008E7DC8 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F0DD81DCB73BD008E7DC8 /* CalendarViewController.swift */; };
+		E45F0DDB1DCB73EF008E7DC8 /* ExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F0DDA1DCB73EF008E7DC8 /* ExpenseViewController.swift */; };
+		E45F0DDD1DCB7413008E7DC8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F0DDC1DCB7413008E7DC8 /* LoginViewController.swift */; };
+		E45F0DDF1DCB744B008E7DC8 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F0DDE1DCB744B008E7DC8 /* RegisterViewController.swift */; };
+		E45F0DE21DCB7495008E7DC8 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F0DE11DCB7495008E7DC8 /* CategoryCell.swift */; };
+		E45F0DE41DCB750F008E7DC8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F0DE31DCB750F008E7DC8 /* User.swift */; };
+		E45F0DE81DCB7568008E7DC8 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F0DE71DCB7568008E7DC8 /* Expense.swift */; };
+		E45F0DEC1DCB7621008E7DC8 /* WebServicesExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F0DEB1DCB7621008E7DC8 /* WebServicesExtension.swift */; };
+		E45F0DEE1DCB7670008E7DC8 /* SegueHandlerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F0DED1DCB7670008E7DC8 /* SegueHandlerType.swift */; };
+		E45F0DF01DCB7695008E7DC8 /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F0DEF1DCB7695008E7DC8 /* UserStore.swift */; };
+		E45F0DF21DCB76CB008E7DC8 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F0DF11DCB76CB008E7DC8 /* Utils.swift */; };
+		E45F0DF41DCB76FE008E7DC8 /* ExpenseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F0DF31DCB76FE008E7DC8 /* ExpenseTableViewCell.swift */; };
+		E45F0DF91DCB77D1008E7DC8 /* EFACalendarDayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F0DF81DCB77D1008E7DC8 /* EFACalendarDayCell.swift */; };
+		E45F0DFB1DCB7815008E7DC8 /* EFACalendarFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F0DFA1DCB7815008E7DC8 /* EFACalendarFlowLayout.swift */; };
+		E45F0DFD1DCB7845008E7DC8 /* EFACalendarHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F0DFC1DCB7845008E7DC8 /* EFACalendarHeaderView.swift */; };
+		E45F0DFF1DCB787F008E7DC8 /* EFACalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F0DFE1DCB787F008E7DC8 /* EFACalendarView.swift */; };
+		E45F0E011DCB79B3008E7DC8 /* EFACalendarDayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E45F0E001DCB79B3008E7DC8 /* EFACalendarDayCell.xib */; };
+		E45F0E031DCB79E1008E7DC8 /* EFACalendarHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E45F0E021DCB79E1008E7DC8 /* EFACalendarHeaderView.xib */; };
+		E45F0E061DCB7AD8008E7DC8 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E45F0E051DCB7AD8008E7DC8 /* Login.storyboard */; };
+		E45F0E0A1DCB825B008E7DC8 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F0E091DCB825B008E7DC8 /* Category.swift */; };
+		E46FB9161DC793C100421D55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46FB9151DC793C100421D55 /* AppDelegate.swift */; };
+		E46FB9181DC793C100421D55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46FB9171DC793C100421D55 /* ViewController.swift */; };
+		E46FB91B1DC793C100421D55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E46FB9191DC793C100421D55 /* Main.storyboard */; };
+		E46FB91D1DC793C100421D55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E46FB91C1DC793C100421D55 /* Assets.xcassets */; };
+		E46FB9201DC793C100421D55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E46FB91E1DC793C100421D55 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		039C7CCA775895FE2D42570D /* Pods_EFAB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EFAB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A40BAECB861B850ACF20928 /* Pods-EFAB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EFAB.release.xcconfig"; path = "Pods/Target Support Files/Pods-EFAB/Pods-EFAB.release.xcconfig"; sourceTree = "<group>"; };
+		54971BA03770BADFCA94A364 /* Pods-EFAB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EFAB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EFAB/Pods-EFAB.debug.xcconfig"; sourceTree = "<group>"; };
+		E42D2FD71DC7BB4D006294D3 /* NetworkModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkModel.swift; path = Networking/NetworkModel.swift; sourceTree = "<group>"; };
+		E42D2FD91DC7BEBE006294D3 /* WebServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebServices.swift; path = Networking/WebServices.swift; sourceTree = "<group>"; };
+		E42D2FDC1DC7C895006294D3 /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Test.swift; path = Models/Test.swift; sourceTree = "<group>"; };
+		E42D2FDF1DC7CB91006294D3 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Components/Constants.swift; sourceTree = "<group>"; };
+		E42D2FE11DC7E040006294D3 /* EFAB-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EFAB-Bridging-Header.h"; sourceTree = "<group>"; };
+		E45F0DD41DCB7085008E7DC8 /* AddCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddCategoryViewController.swift; path = ViewControllers/AddCategoryViewController.swift; sourceTree = "<group>"; };
+		E45F0DD61DCB7367008E7DC8 /* BudgetListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BudgetListViewController.swift; path = ViewControllers/BudgetListViewController.swift; sourceTree = "<group>"; };
+		E45F0DD81DCB73BD008E7DC8 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalendarViewController.swift; path = ViewControllers/CalendarViewController.swift; sourceTree = "<group>"; };
+		E45F0DDA1DCB73EF008E7DC8 /* ExpenseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExpenseViewController.swift; path = ViewControllers/ExpenseViewController.swift; sourceTree = "<group>"; };
+		E45F0DDC1DCB7413008E7DC8 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ViewControllers/LoginViewController.swift; sourceTree = "<group>"; };
+		E45F0DDE1DCB744B008E7DC8 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterViewController.swift; path = ViewControllers/RegisterViewController.swift; sourceTree = "<group>"; };
+		E45F0DE11DCB7495008E7DC8 /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoryCell.swift; path = TableCells/CategoryCell.swift; sourceTree = "<group>"; };
+		E45F0DE31DCB750F008E7DC8 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Models/User.swift; sourceTree = "<group>"; };
+		E45F0DE71DCB7568008E7DC8 /* Expense.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Expense.swift; path = Models/Expense.swift; sourceTree = "<group>"; };
+		E45F0DEB1DCB7621008E7DC8 /* WebServicesExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebServicesExtension.swift; path = Networking/WebServicesExtension.swift; sourceTree = "<group>"; };
+		E45F0DED1DCB7670008E7DC8 /* SegueHandlerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SegueHandlerType.swift; path = Components/SegueHandlerType.swift; sourceTree = "<group>"; };
+		E45F0DEF1DCB7695008E7DC8 /* UserStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserStore.swift; path = Components/UserStore.swift; sourceTree = "<group>"; };
+		E45F0DF11DCB76CB008E7DC8 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Components/Utils.swift; sourceTree = "<group>"; };
+		E45F0DF31DCB76FE008E7DC8 /* ExpenseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExpenseTableViewCell.swift; path = Components/ExpenseTableViewCell.swift; sourceTree = "<group>"; };
+		E45F0DF81DCB77D1008E7DC8 /* EFACalendarDayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EFACalendarDayCell.swift; path = Calendar/EFACalendarDayCell.swift; sourceTree = "<group>"; };
+		E45F0DFA1DCB7815008E7DC8 /* EFACalendarFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EFACalendarFlowLayout.swift; path = Calendar/EFACalendarFlowLayout.swift; sourceTree = "<group>"; };
+		E45F0DFC1DCB7845008E7DC8 /* EFACalendarHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EFACalendarHeaderView.swift; path = Calendar/EFACalendarHeaderView.swift; sourceTree = "<group>"; };
+		E45F0DFE1DCB787F008E7DC8 /* EFACalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EFACalendarView.swift; path = Calendar/EFACalendarView.swift; sourceTree = "<group>"; };
+		E45F0E001DCB79B3008E7DC8 /* EFACalendarDayCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EFACalendarDayCell.xib; path = Calendar/EFACalendarDayCell.xib; sourceTree = "<group>"; };
+		E45F0E021DCB79E1008E7DC8 /* EFACalendarHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EFACalendarHeaderView.xib; path = Calendar/EFACalendarHeaderView.xib; sourceTree = "<group>"; };
+		E45F0E051DCB7AD8008E7DC8 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		E45F0E091DCB825B008E7DC8 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Category.swift; path = Models/Category.swift; sourceTree = "<group>"; };
+		E45F0E0B1DCBA6D8008E7DC8 /* EFAB.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EFAB.entitlements; sourceTree = "<group>"; };
+		E46FB9121DC793C100421D55 /* EFAB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EFAB.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E46FB9151DC793C100421D55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E46FB9171DC793C100421D55 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E46FB91A1DC793C100421D55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E46FB91C1DC793C100421D55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E46FB91F1DC793C100421D55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E46FB9211DC793C100421D55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E46FB90F1DC793C100421D55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E96EE338C9159D3C433A107 /* Pods_EFAB.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CC5D7C972974FFDEEA8A7C18 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				54971BA03770BADFCA94A364 /* Pods-EFAB.debug.xcconfig */,
+				3A40BAECB861B850ACF20928 /* Pods-EFAB.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E42D2FD61DC7BA88006294D3 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				E42D2FD71DC7BB4D006294D3 /* NetworkModel.swift */,
+				E42D2FD91DC7BEBE006294D3 /* WebServices.swift */,
+				E45F0DEB1DCB7621008E7DC8 /* WebServicesExtension.swift */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		E42D2FDB1DC7C868006294D3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E42D2FDC1DC7C895006294D3 /* Test.swift */,
+				E45F0DE31DCB750F008E7DC8 /* User.swift */,
+				E45F0DE71DCB7568008E7DC8 /* Expense.swift */,
+				E45F0E091DCB825B008E7DC8 /* Category.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		E42D2FDE1DC7CB6C006294D3 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E42D2FDF1DC7CB91006294D3 /* Constants.swift */,
+				E45F0DED1DCB7670008E7DC8 /* SegueHandlerType.swift */,
+				E45F0DEF1DCB7695008E7DC8 /* UserStore.swift */,
+				E45F0DF11DCB76CB008E7DC8 /* Utils.swift */,
+				E45F0DF31DCB76FE008E7DC8 /* ExpenseTableViewCell.swift */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+		E45F0DD31DCB702B008E7DC8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E45F0DD41DCB7085008E7DC8 /* AddCategoryViewController.swift */,
+				E45F0DD61DCB7367008E7DC8 /* BudgetListViewController.swift */,
+				E45F0DD81DCB73BD008E7DC8 /* CalendarViewController.swift */,
+				E45F0DDA1DCB73EF008E7DC8 /* ExpenseViewController.swift */,
+				E45F0DDC1DCB7413008E7DC8 /* LoginViewController.swift */,
+				E45F0DDE1DCB744B008E7DC8 /* RegisterViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E45F0DE01DCB7465008E7DC8 /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				E45F0DE11DCB7495008E7DC8 /* CategoryCell.swift */,
+			);
+			name = TableCells;
+			sourceTree = "<group>";
+		};
+		E45F0DF71DCB7774008E7DC8 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				E45F0DF81DCB77D1008E7DC8 /* EFACalendarDayCell.swift */,
+				E45F0DFA1DCB7815008E7DC8 /* EFACalendarFlowLayout.swift */,
+				E45F0DFC1DCB7845008E7DC8 /* EFACalendarHeaderView.swift */,
+				E45F0DFE1DCB787F008E7DC8 /* EFACalendarView.swift */,
+				E45F0E001DCB79B3008E7DC8 /* EFACalendarDayCell.xib */,
+				E45F0E021DCB79E1008E7DC8 /* EFACalendarHeaderView.xib */,
+			);
+			name = Calendar;
+			sourceTree = "<group>";
+		};
+		E45F0E041DCB7A5D008E7DC8 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E46FB9191DC793C100421D55 /* Main.storyboard */,
+				E45F0E051DCB7AD8008E7DC8 /* Login.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		E46FB9091DC793C100421D55 = {
+			isa = PBXGroup;
+			children = (
+				E46FB9141DC793C100421D55 /* EFAB */,
+				E46FB9131DC793C100421D55 /* Products */,
+				CC5D7C972974FFDEEA8A7C18 /* Pods */,
+				E8F0C1E540528E0312ADFFA6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E46FB9131DC793C100421D55 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E46FB9121DC793C100421D55 /* EFAB.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E46FB9141DC793C100421D55 /* EFAB */ = {
+			isa = PBXGroup;
+			children = (
+				E45F0DF71DCB7774008E7DC8 /* Calendar */,
+				E42D2FDE1DC7CB6C006294D3 /* Components */,
+				E42D2FDB1DC7C868006294D3 /* Models */,
+				E42D2FD61DC7BA88006294D3 /* Networking */,
+				E45F0E041DCB7A5D008E7DC8 /* Storyboards */,
+				E45F0DE01DCB7465008E7DC8 /* TableCells */,
+				E45F0DD31DCB702B008E7DC8 /* ViewControllers */,
+				E46FB9151DC793C100421D55 /* AppDelegate.swift */,
+				E46FB9171DC793C100421D55 /* ViewController.swift */,
+				E46FB91C1DC793C100421D55 /* Assets.xcassets */,
+				E46FB91E1DC793C100421D55 /* LaunchScreen.storyboard */,
+				E46FB9211DC793C100421D55 /* Info.plist */,
+				E45F0E0B1DCBA6D8008E7DC8 /* EFAB.entitlements */,
+				E42D2FE11DC7E040006294D3 /* EFAB-Bridging-Header.h */,
+			);
+			path = EFAB;
+			sourceTree = "<group>";
+		};
+		E8F0C1E540528E0312ADFFA6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				039C7CCA775895FE2D42570D /* Pods_EFAB.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E46FB9111DC793C100421D55 /* EFAB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E46FB9241DC793C100421D55 /* Build configuration list for PBXNativeTarget "EFAB" */;
+			buildPhases = (
+				C211D53AB45019A952AB8D7B /* [CP] Check Pods Manifest.lock */,
+				E46FB90E1DC793C100421D55 /* Sources */,
+				E46FB90F1DC793C100421D55 /* Frameworks */,
+				E46FB9101DC793C100421D55 /* Resources */,
+				4E1720C63E3F74486D2FFDB9 /* [CP] Embed Pods Frameworks */,
+				54ED5A2AB32BAE0C887D885C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EFAB;
+			productName = EFAB;
+			productReference = E46FB9121DC793C100421D55 /* EFAB.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E46FB90A1DC793C100421D55 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = Luuke192;
+				TargetAttributes = {
+					E46FB9111DC793C100421D55 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = LGU82C9CG3;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = E46FB90D1DC793C100421D55 /* Build configuration list for PBXProject "EFAB" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E46FB9091DC793C100421D55;
+			productRefGroup = E46FB9131DC793C100421D55 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E46FB9111DC793C100421D55 /* EFAB */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E46FB9101DC793C100421D55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E45F0E031DCB79E1008E7DC8 /* EFACalendarHeaderView.xib in Resources */,
+				E46FB9201DC793C100421D55 /* LaunchScreen.storyboard in Resources */,
+				E45F0E061DCB7AD8008E7DC8 /* Login.storyboard in Resources */,
+				E46FB91D1DC793C100421D55 /* Assets.xcassets in Resources */,
+				E46FB91B1DC793C100421D55 /* Main.storyboard in Resources */,
+				E45F0E011DCB79B3008E7DC8 /* EFACalendarDayCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4E1720C63E3F74486D2FFDB9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EFAB/Pods-EFAB-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54ED5A2AB32BAE0C887D885C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EFAB/Pods-EFAB-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C211D53AB45019A952AB8D7B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E46FB90E1DC793C100421D55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E45F0DFD1DCB7845008E7DC8 /* EFACalendarHeaderView.swift in Sources */,
+				E45F0DE81DCB7568008E7DC8 /* Expense.swift in Sources */,
+				E45F0DF01DCB7695008E7DC8 /* UserStore.swift in Sources */,
+				E45F0DE21DCB7495008E7DC8 /* CategoryCell.swift in Sources */,
+				E45F0DEC1DCB7621008E7DC8 /* WebServicesExtension.swift in Sources */,
+				E42D2FD81DC7BB4D006294D3 /* NetworkModel.swift in Sources */,
+				E45F0DFB1DCB7815008E7DC8 /* EFACalendarFlowLayout.swift in Sources */,
+				E46FB9181DC793C100421D55 /* ViewController.swift in Sources */,
+				E42D2FDD1DC7C895006294D3 /* Test.swift in Sources */,
+				E45F0DDF1DCB744B008E7DC8 /* RegisterViewController.swift in Sources */,
+				E42D2FDA1DC7BEBE006294D3 /* WebServices.swift in Sources */,
+				E45F0DF41DCB76FE008E7DC8 /* ExpenseTableViewCell.swift in Sources */,
+				E45F0DE41DCB750F008E7DC8 /* User.swift in Sources */,
+				E46FB9161DC793C100421D55 /* AppDelegate.swift in Sources */,
+				E45F0DD51DCB7085008E7DC8 /* AddCategoryViewController.swift in Sources */,
+				E45F0DD91DCB73BD008E7DC8 /* CalendarViewController.swift in Sources */,
+				E45F0E0A1DCB825B008E7DC8 /* Category.swift in Sources */,
+				E45F0DFF1DCB787F008E7DC8 /* EFACalendarView.swift in Sources */,
+				E45F0DDB1DCB73EF008E7DC8 /* ExpenseViewController.swift in Sources */,
+				E45F0DF21DCB76CB008E7DC8 /* Utils.swift in Sources */,
+				E42D2FE01DC7CB91006294D3 /* Constants.swift in Sources */,
+				E45F0DD71DCB7367008E7DC8 /* BudgetListViewController.swift in Sources */,
+				E45F0DEE1DCB7670008E7DC8 /* SegueHandlerType.swift in Sources */,
+				E45F0DDD1DCB7413008E7DC8 /* LoginViewController.swift in Sources */,
+				E45F0DF91DCB77D1008E7DC8 /* EFACalendarDayCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E46FB9191DC793C100421D55 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E46FB91A1DC793C100421D55 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E46FB91E1DC793C100421D55 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E46FB91F1DC793C100421D55 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E46FB9221DC793C100421D55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E46FB9231DC793C100421D55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E46FB9251DC793C100421D55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54971BA03770BADFCA94A364 /* Pods-EFAB.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = EFAB/EFAB.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = LGU82C9CG3;
+				INFOPLIST_FILE = EFAB/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.interapt.EFABLL;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EFAB/EFAB-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E46FB9261DC793C100421D55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A40BAECB861B850ACF20928 /* Pods-EFAB.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = EFAB/EFAB.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = LGU82C9CG3;
+				INFOPLIST_FILE = EFAB/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.interapt.EFABLL;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EFAB/EFAB-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E46FB90D1DC793C100421D55 /* Build configuration list for PBXProject "EFAB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E46FB9221DC793C100421D55 /* Debug */,
+				E46FB9231DC793C100421D55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E46FB9241DC793C100421D55 /* Build configuration list for PBXNativeTarget "EFAB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E46FB9251DC793C100421D55 /* Debug */,
+				E46FB9261DC793C100421D55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E46FB90A1DC793C100421D55 /* Project object */;
+}
